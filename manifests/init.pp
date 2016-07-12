@@ -8,7 +8,7 @@ class simple {
 
   file { '/var/www/simple/index.html':
     ensure  => file,
-    source  => 'modules:///simple/index.html',
+    source  => 'puppet:///modules/simple/index.html',
     require => Apache::Vhost['192.168.8.137'],
   }
 
